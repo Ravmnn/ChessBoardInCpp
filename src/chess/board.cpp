@@ -7,6 +7,12 @@ Board::Board() noexcept
 }
 
 
+const SquareMatrix& Board::getSquares() const noexcept { return _squares; }
+
+
+void Board::setSquares(const SquareMatrix& squares) noexcept { _squares = squares; }
+
+
 SquareMatrix Board::generateDefaultSquareMatrix() noexcept
 {
 	SquareMatrix matrix(8);

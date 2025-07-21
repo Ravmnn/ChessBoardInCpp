@@ -11,3 +11,15 @@ Piece* Square::piece() const noexcept { return _piece; }
 
 void Square::setPosition(const Position& position) noexcept { _position = position; }
 void Square::setPiece(Piece* const piece) noexcept { _piece = piece; }
+
+
+bool Square::isWhiteSquare(const Position& position) noexcept
+{
+	return (position.row + position.col) % 2 != 0;
+}
+
+
+bool Square::isBlackSquare(const Position& position) noexcept
+{
+	return !isWhiteSquare(position);
+}

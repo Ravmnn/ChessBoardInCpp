@@ -3,6 +3,6 @@
 
 struct Position
 {
-	unsigned int row;
-	unsigned int col;
+	unsigned int row = 1;
+	unsigned int col = 1;
 };

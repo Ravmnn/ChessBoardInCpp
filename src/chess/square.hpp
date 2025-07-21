@@ -22,4 +22,8 @@ public:
 
 	void setPosition(const Position& position) noexcept;
 	void setPiece(Piece* piece) noexcept;
+
+
+	static bool isWhiteSquare(const Position& position) noexcept;
+	static bool isBlackSquare(const Position& position) noexcept;
 };
